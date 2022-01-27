@@ -1,24 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <title>Mine Sweeper</title>
-
 </head>
+<link rel="stylesheet" href="mine.css">
 
-<body onload="initGame()">
-    <h1>Sprint1</h1>
-    <h2>Mine Sweeper</h2>
-    <button class="easy" onclick="buildBoard(4)">easy</button>
-    <button class="medium" onclick="buildBoard(8)">medium</button>
-    <button class="hard" onclick="buildBoard(12)">hard</button>
-    <div class="board"></div>
-    <script src="js/utils.js"></script>
-    <script src="js/game.js"></script>
+<body onload="init()">
+
+<div class="container">
+    <div class="buttons">
+        <button onclick="createDiffLevel(4,2)">Beginner(4*4)</button>
+        <button onclick="createDiffLevel(8,12)">Medium(8*8)</button>
+        <button onclick="createDiffLevel(12,30)">Expert(12*12)</button>
+    </div>
+     
+    <div class="counter"><span class="timer"></span></div>
+
+    <table cellpadding="10" class="board">
+        <tbody class="cells"></tbody>
+    </table>
+</div>
+
 </body>
+<script src="utils.js"></script>
+<script src="game.js"></script>
 
 </html>

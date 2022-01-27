@@ -1,0 +1,42 @@
+body{
+    background-image: linear-gradient(2700deg, #ffffff 0%, #000000 100%);
+
+}
+
+.container {
+    text-align: center;
+}
+
+button{
+    margin:15px;
+    padding: 1%;
+    background-image: linear-gradient(360deg, #000000 0%, #ffffff 100%);
+    font-size: large;
+    font-weight: 600;
+    color: rgb(251, 251, 251);
+    border-radius: 10%;
+    
+    border: rgb(14, 1, 1) 3px solid
+}
+table{
+    margin: auto;
+    width: 500px;
+    height: 440px;
+}
+.board td {
+    border: 6px solid rgb(54, 48, 48);
+    text-align: center;
+    border-radius: 10%;
+    
+}
+
+.board td:hover {
+	background-color: #e4d7d7;
+}
+
+.counter{
+    font-size: 2.3rem;
+    margin-top: 0;
+    margin-right: 350px;
+    color: rgb(0, 0, 0);
+}
