@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Mine Sweeper</title>
+</head>
+<link rel="stylesheet" href="mine.css">
+
+<body onload="init()">
+
+    <div class="container">
+        <div class="buttons">
+            <button onclick="createDiffLevel(4,2)">Beginner(4*4)</button>
+            <button onclick="createDiffLevel(8,12)">Medium(8*8)</button>
+            <button onclick="createDiffLevel(12,30)">Expert(12*12)</button>
+        </div>
+
+        <div class="counter"></div>
+        <div class="timer"></div>
+
+        <table class="board">
+            <tbody class="cells"></tbody>
+        </table>
+    </div>
+
+</body>
+<script src="utils.js"></script>
+<script src="game.js"></script>
+
+</html>
